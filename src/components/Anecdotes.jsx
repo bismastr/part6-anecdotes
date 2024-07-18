@@ -9,7 +9,7 @@ const Anecdotes = () => {
             return state.anecdote.filter((a) => a.content.toLowerCase().includes(state.filter.toLowerCase()))
         }
 
-        return state.anecdote.sort((a, b) => b.votes - a.votes)
+        return [...state.anecdote].sort((a, b) => b.votes - a.votes)
     })
 
     return (
