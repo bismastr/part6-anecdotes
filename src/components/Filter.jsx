@@ -7,7 +7,7 @@ const Filter = () => {
 
     return (
         <div>
-            filter <input onChange={(event) => dispatch(filterWords(event.target.value))} value={state.filter}></input>
+            filter <input onChange={(event) => dispatch(filterWords(event.target.value))} value={state}></input>
         </div>
     )
 }
